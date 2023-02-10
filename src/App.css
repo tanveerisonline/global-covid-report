@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+:root {
+  --first-color: #ec4c8b;
+  --second-color: #df4783;
+  --third-color: #7b2c4b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: var(--second-color);
+  color: white;
+  padding: 10px 10px;
+}
+
+nav a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav div {
+  display: flex;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .fa-chevron-left,
+nav .fa-microphone,
+nav .fa-cog {
+  display: flex;
+  align-items: center;
+}
+
+.total-countries-div,
+.total-regions-div {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--first-color);
+  padding: 30px 0;
+}
+
+.total-countries-div i,
+.total-regions-div i {
+  color: var(--third-color);
+}
+
+.total-countries-div div,
+.total-regions-div div {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.total-countries-div div span:nth-child(2),
+.total-regions-div div span:nth-child(2) {
+  font-size: 15px;
+}
+
+.cases-by-countries,
+.cases-by-regions {
+  padding: 5px 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases-by-countries p {
+  margin: 0;
+}
+
+.cases-by-countries input {
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  width: 135px;
+}
+
+.loading {
+  width: 100%;
+  height: calc(100vh - 41px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid var(--second-color);
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--first-color);
+}
+
+.countries a {
+  width: 50%;
+  text-decoration: none;
+  height: 200px;
+}
+
+.countries .country {
+  height: 200px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.countries .country i {
+  color: var(--third-color);
+}
+
+.regions div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  color: white;
+}
+
+.countries .country div {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.regions div span:first-child {
+  font-weight: bold;
+}
+
+.countries .country div span:first-child {
+  font-weight: bold;
+}
+
+.countries .country .fa-arrow-circle-right {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: white;
+}
+
+.regions {
+  background-color: var(--first-color);
+  width: 100%;
+}
+
+.regions .no-regions {
+  width: 100%;
+  height: calc(100vh - 211px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regions .no-regions p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.regions div:nth-child(odd) {
+  background-color: #eb4b8a;
+}
+
+.regions div:nth-child(even) {
+  background-color: #d1447a;
+}
+
+.no-data {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - (253.703px / 2));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filter-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.country-flag {
+  max-width: 45%;
+  max-height: 90%;
+}
+
+.main-container {
+  min-height: calc(100vh - 41px);
+  background-color: var(--first-color);
 }
