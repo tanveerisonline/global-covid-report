@@ -71,7 +71,11 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a href="#">Demo link coming soon...</a>
+## 🚀 Live Demo <a href="https://covid-app-8t47.onrender.com/">Live link</a>
+
+<!-- Video Link -->
+
+## 🚀 Video Presentation <a href="https://drive.google.com/file/d/1g6awZWvRgt1ujf-bC1vL7_fHvhEB6pJ_/view?usp=sharing">Video link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,9 +142,7 @@ Github Pages.
 
 > Following are a few features i will add to the project in future.
 
-- [ ] I will add a database to this project in future where i can save user data.
-- [ ] I will add more functionality to this project like searching, deleting etc.
-- [ ] I will update the interface and design of the project in future.
+- [] I will update the interface and design of the project in future.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,9 +184,9 @@ If you're committed to making the world a better place, please support our proje
 
   - [Answer_1]:Thanks for the question you can find the answer at the top section of this readme.md file where i have explained everything.
 
-- **[Question_2]** Have you used webpack in this project ?
+- **[Question_2]** Have you used Redux in this project ?
 
-  - [Answer_2] Yes i have used webpack 5 in this project.
+  - [Answer_2] Yes i have used Redux in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
