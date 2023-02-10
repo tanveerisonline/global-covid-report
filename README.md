@@ -143,6 +143,10 @@ Github Pages.
 > Following are a few features i will add to the project in future.
 
 - [] I will update the interface and design of the project in future.
+- [] I will add the new features in future like this app will show Covid cases State wise also.
+- [] I will add the new features in future like this app will show Covid cases City wise also.
+- [] I will add the new features in future like a user can search Covid cases when clicking on country
+it can search for states and show cases of that specific state.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
